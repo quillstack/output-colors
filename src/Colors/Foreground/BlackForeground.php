@@ -2,7 +2,7 @@
 
 namespace QuillStack\Output\Colors\Foreground;
 
-use QuillStack\Output\AbstractDecorator;
+use QuillStack\Output\Colors\AbstractDecorator;
 
 class BlackForeground extends AbstractDecorator
 {

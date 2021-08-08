@@ -1,6 +1,6 @@
 <?php
 
-namespace QuillStack\Output;
+namespace QuillStack\Output\Colors;
 
 class AbstractDecorator
 {
@@ -9,14 +9,14 @@ class AbstractDecorator
 
     public function decorate(string $str): string
     {
+        $colored = $str;
         $reset = "\e[" . self::CODE . 'm';
-        $wasColored = false;
+        $wasColored = stristr($colored, '<' . static::COLOR . '>');
 
-        if (stristr($str, '<' . static::COLOR . '>')) {
-            $wasColored = true;
+        if ($wasColored) {
+            $colored = str_ireplace('<' . static::COLOR . '>', "\e[" . static::CODE . 'm', $colored);
         }
 
-        $colored = str_ireplace('<' . static::COLOR . '>', "\e[" . static::CODE . 'm', $str);
         $colored = str_ireplace('</' . static::COLOR . '>', $reset, $colored);
 
         if ($wasColored && substr($colored, -4) !== $reset) {

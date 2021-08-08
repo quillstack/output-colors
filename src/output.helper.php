@@ -2,9 +2,16 @@
 
 use QuillStack\Output\Output;
 
-if (!function_exists('output')) {
-    function output(string $str): string
+if (!function_exists('write')) {
+    function write(string $str): string
     {
-        return Output::getInstance()->colorize($str);
+        return Output::getInstance()->write($str);
+    }
+}
+
+if (!function_exists('writeln')) {
+    function writeln(string $str): string
+    {
+        return Output::getInstance()->writeln($str);
     }
 }

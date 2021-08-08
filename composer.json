@@ -23,7 +23,8 @@
             "src/output.helper.php"
         ],
         "psr-4": {
-            "QuillStack\\Output\\": "src/"
+            "QuillStack\\Output\\": "src/",
+            "QuillStack\\Tests\\Output\\": "tests/"
         }
     },
     "require-dev": {

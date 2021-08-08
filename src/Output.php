@@ -5,7 +5,7 @@ namespace QuillStack\Output;
 use QuillStack\Output\Colors\Foreground\BlackForeground;
 use QuillStack\Output\Colors\Foreground\DarkGreyForeground;
 
-class Output
+class Output implements OutputInterface
 {
     const COLORS = [
         BlackForeground::class,
@@ -14,7 +14,7 @@ class Output
 
     private static Output $instance;
 
-    public function colorize(string $str): string
+    public function write(string $str): string
     {
         foreach (self::COLORS as $colorClass) {
             $str = (new $colorClass)->decorate($str);
@@ -23,7 +23,12 @@ class Output
         return $str;
     }
 
-    public static function getInstance(): Output
+    public function writeln(string $str): string
+    {
+        return $this->write($str) . PHP_EOL;
+    }
+
+    public static function getInstance(): OutputInterface
     {
         if (!isset(Output::$instance)) {
             Output::$instance = new Output();

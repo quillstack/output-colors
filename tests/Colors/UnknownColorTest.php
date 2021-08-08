@@ -2,18 +2,10 @@
 
 namespace Colors;
 
-use PHPUnit\Framework\TestCase;
+use QuillStack\Tests\Output\Colors\AbstractTestColor;
 
-class UnknownColorTest extends TestCase
+class UnknownColorTest extends AbstractTestColor
 {
-    /**
-     * @dataProvider messageProvider
-     */
-    public function testMessage(string $message, string $expected)
-    {
-        $this->assertEquals($expected, output($message));
-    }
-
     public function messageProvider(): array
     {
         return [
