@@ -3,15 +3,15 @@
 use QuillStack\Output\Output;
 
 if (!function_exists('write')) {
-    function write(string $str): string
+    function write(string $str): void
     {
-        return Output::getInstance()->write($str);
+        Output::getInstance()->write($str);
     }
 }
 
 if (!function_exists('writeln')) {
-    function writeln(string $str): string
+    function writeln(string $str): void
     {
-        return Output::getInstance()->writeln($str);
+        Output::getInstance()->writeln($str);
     }
 }

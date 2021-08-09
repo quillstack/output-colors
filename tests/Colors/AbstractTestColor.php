@@ -11,7 +11,7 @@ class AbstractTestColor extends TestCase
      */
     public function testMessage(string $message, string $expected)
     {
-        $this->assertEquals($expected, write($message));
-        $this->assertEquals($expected . PHP_EOL, writeln($message));
+        $this->expectOutputString($expected);
+        write($message);
     }
 }
