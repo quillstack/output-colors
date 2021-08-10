@@ -1,6 +1,6 @@
 <?php
 
-namespace QuillStack\Tests\Output\Colors;
+namespace Quillstack\Abstract\Output;
 
 use PHPUnit\Framework\TestCase;
 
@@ -9,7 +9,7 @@ class AbstractTestColor extends TestCase
     /**
      * @dataProvider messageProvider
      */
-    public function testWiteMessage(string $message, string $expected)
+    public function testWriteMessage(string $message, string $expected)
     {
         $this->expectOutputString($expected);
         write($message);

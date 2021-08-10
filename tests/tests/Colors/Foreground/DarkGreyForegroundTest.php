@@ -1,8 +1,8 @@
 <?php
 
-namespace Colors\Foreground;
+namespace Quillstack\Tests\Output\Colors\Foreground;
 
-use QuillStack\Tests\Output\Colors\AbstractTestColor;
+use Quillstack\Abstract\Output\AbstractTestColor;
 
 class DarkGreyForegroundTest extends AbstractTestColor
 {

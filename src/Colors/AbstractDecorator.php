@@ -1,6 +1,6 @@
 <?php
 
-namespace QuillStack\Output\Colors;
+namespace Quillstack\Output\Colors;
 
 class AbstractDecorator
 {

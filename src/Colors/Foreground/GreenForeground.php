@@ -1,8 +1,8 @@
 <?php
 
-namespace QuillStack\Output\Colors\Foreground;
+namespace Quillstack\Output\Colors\Foreground;
 
-use QuillStack\Output\Colors\AbstractDecorator;
+use Quillstack\Output\Colors\AbstractDecorator;
 
 class GreenForeground extends AbstractDecorator
 {

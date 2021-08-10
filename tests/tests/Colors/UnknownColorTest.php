@@ -1,8 +1,8 @@
 <?php
 
-namespace Colors;
+namespace Quillstack\Tests\Output\Colors;
 
-use QuillStack\Tests\Output\Colors\AbstractTestColor;
+use Quillstack\Abstract\Output\AbstractTestColor;
 
 class UnknownColorTest extends AbstractTestColor
 {

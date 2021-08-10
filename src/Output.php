@@ -1,12 +1,12 @@
 <?php
 
-namespace QuillStack\Output;
+namespace Quillstack\Output;
 
-use QuillStack\Output\Colors\Foreground\BlackForeground;
-use QuillStack\Output\Colors\Foreground\DarkGreyForeground;
-use QuillStack\Output\Colors\Foreground\GreenForeground;
-use QuillStack\Output\Colors\Foreground\LightRedForeground;
-use QuillStack\Output\Colors\Foreground\RedForeground;
+use Quillstack\Output\Colors\Foreground\BlackForeground;
+use Quillstack\Output\Colors\Foreground\DarkGreyForeground;
+use Quillstack\Output\Colors\Foreground\GreenForeground;
+use Quillstack\Output\Colors\Foreground\LightRedForeground;
+use Quillstack\Output\Colors\Foreground\RedForeground;
 
 class Output implements OutputInterface
 {

@@ -1,4 +1,5 @@
 {
+    "name": "quillstack/output",
     "description": "Library for colouring output in the console based on HTML-like tags.",
     "type": "library",
     "license": "MIT",
@@ -24,8 +25,9 @@
             "src/output.helper.php"
         ],
         "psr-4": {
-            "QuillStack\\Output\\": "src/",
-            "QuillStack\\Tests\\Output\\": "tests/tests/"
+            "Quillstack\\Output\\": "src/",
+            "Quillstack\\Tests\\Output\\": "tests/tests/",
+            "Quillstack\\Abstract\\Output\\": "tests/abstract/"
         }
     },
     "require-dev": {

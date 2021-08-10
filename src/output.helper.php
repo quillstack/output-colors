@@ -1,6 +1,6 @@
 <?php
 
-use QuillStack\Output\Output;
+use Quillstack\Output\Output;
 
 if (!function_exists('write')) {
     function write(string $str): void

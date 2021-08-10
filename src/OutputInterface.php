@@ -1,6 +1,6 @@
 <?php
 
-namespace QuillStack\Output;
+namespace Quillstack\Output;
 
 interface OutputInterface
 {

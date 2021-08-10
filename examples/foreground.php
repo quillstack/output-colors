@@ -1,7 +1,7 @@
 #!/usr/local/bin/php
 <?php
 
-use QuillStack\Output\Output;
+use Quillstack\Output\Output;
 
 require __DIR__ . '/../vendor/autoload.php';
 
