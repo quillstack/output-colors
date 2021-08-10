@@ -1,0 +1,36 @@
+{
+    "name": "quillstack/output",
+    "description": "Library for colouring output in the console based on HTML-like tags.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "output",
+        "colours",
+        "colors",
+        "php8"
+    ],
+    "homepage": "https://quillstack.org/output",
+    "authors": [
+        {
+            "name": "Radek Ziemniewicz",
+            "email": "radek@quillstack.org"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "quillstack/dotenv": "^0.0.1"
+    },
+    "autoload": {
+        "files": [
+            "src/output.helper.php"
+        ],
+        "psr-4": {
+            "Quillstack\\Output\\": "src/",
+            "Quillstack\\Tests\\Output\\": "tests/tests/",
+            "Quillstack\\Abstract\\Output\\": "tests/abstract/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
