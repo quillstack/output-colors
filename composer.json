@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "quillstack/dotenv": "^0.0.1"
     },
     "autoload": {
         "files": [
@@ -24,7 +25,7 @@
         ],
         "psr-4": {
             "QuillStack\\Output\\": "src/",
-            "QuillStack\\Tests\\Output\\": "tests/"
+            "QuillStack\\Tests\\Output\\": "tests/tests/"
         }
     },
     "require-dev": {
