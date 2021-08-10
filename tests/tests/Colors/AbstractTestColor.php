@@ -9,9 +9,18 @@ class AbstractTestColor extends TestCase
     /**
      * @dataProvider messageProvider
      */
-    public function testMessage(string $message, string $expected)
+    public function testWiteMessage(string $message, string $expected)
     {
         $this->expectOutputString($expected);
         write($message);
+    }
+
+    /**
+     * @dataProvider messageProvider
+     */
+    public function testWritelnMessage(string $message, string $expected)
+    {
+        $this->expectOutputString($expected . PHP_EOL);
+        writeln($message);
     }
 }

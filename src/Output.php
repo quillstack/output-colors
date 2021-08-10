@@ -41,10 +41,10 @@ class Output implements OutputInterface
 
     public static function getInstance(): OutputInterface
     {
-        if (!isset(Output::$instance)) {
-            Output::$instance = new Output();
+        if (!isset(static::$instance)) {
+            static::$instance = new Output();
         }
 
-        return Output::$instance;
+        return static::$instance;
     }
 }
